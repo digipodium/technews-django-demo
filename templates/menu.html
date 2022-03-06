@@ -1,36 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'layout/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="cakes">
-        {% for cake in cakelist %}
-        <p>
-            Cake : {{cake.name}} <br>
-            Price : {{cake.price}} <br>
-            Details : {{cake.description}}<br>
-        </p>
-        {% empty %}
-        <p> No cake available right now! </p>
-        {% endfor %}
-    </div>
-    <div class="biscuits">
-        {% for bisc in biscuitlist %}
-        <p>
-            Biscuit : {{bisc.name}} <br>
-            Price : {{bisc.price}} <br>
-            Details : {{bisc.description}}<br>
-        </p>
-        {% empty %}
-        <p> No biscuits available right now! </p>
-        {% endfor %}
-    </div>
-</body>
-
-</html>
+{% block content %}
+<div class="cakes">
+    {% for cake in cakelist %}
+    <p>
+        Cake : {{cake.name}} <br>
+        Price : {{cake.price}} <br>
+        Details : {{cake.description}}<br>
+    </p>
+    {% empty %}
+    <p> No cake available right now! </p>
+    {% endfor %}
+</div>
+<div class="biscuits">
+    {% for bisc in biscuitlist %}
+    <p>
+        Biscuit : {{bisc.name}} <br>
+        Price : {{bisc.price}} <br>
+        Details : {{bisc.description}}<br>
+    </p>
+    {% empty %}
+    <p> No biscuits available right now! </p>
+    {% endfor %}
+</div>
+{% endblock %}
