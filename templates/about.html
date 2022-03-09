@@ -1,7 +1,39 @@
 {% extends 'layout/base.html' %}
 
 
+{% block css %}
+<style>
+    .container {
+        background-color: #eff8bb;
+        height: 50vh;
+    }
+
+    .container-fluid {
+        background-color: #bbeaf8;
+        height: 50vh;
+    }
+
+    .col {
+        background-color: #ccc7c7;
+        outline: 1px solid #4b4848;
+    }
+</style>
+{% endblock css %}
 {% block content %}
-    <h1>About</h1>
+<!-- shortcut .container>.row>.col*3>lorem1 -->
+<div class="container">
+    <div class="row">
+        <div class="col">Lorem.</div>
+        <div class="col">Voluptatum.</div>
+        <div class="col">Beatae!</div>
+    </div>
+</div>
+<!-- shortcut .container-fluid>.row>.col*3>lorem1 -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">Lorem.</div>
+        <div class="col">Voluptatum.</div>
+        <div class="col">Beatae!</div>
+    </div>
+</div>
 {% endblock content %}
-    
