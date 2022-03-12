@@ -3,17 +3,9 @@
 
 {% block css %}
 <style>
-    .container {
-        background-color: #eff8bb;
-        height: 50vh;
-    }
-
-    .container-fluid {
-        background-color: #bbeaf8;
-        height: 50vh;
-    }
-
-    .col {
+    .col,
+    .col-md-3,
+    .col-lg-3 {
         background-color: #ccc7c7;
         outline: 1px solid #4b4848;
     }
@@ -23,17 +15,53 @@
 <!-- shortcut .container>.row>.col*3>lorem1 -->
 <div class="container">
     <div class="row">
-        <div class="col">Lorem.</div>
-        <div class="col">Voluptatum.</div>
-        <div class="col">Beatae!</div>
+        <div class="col-lg-3 col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore explicabo ad
+            provident
+            reprehenderit officia exercitationem tempore doloribus, animi voluptatibus sapiente alias voluptatem velit.
+            Aliquid blanditiis autem mollitia facilis quam error?.</div>
+        <div class="col-md-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem commodi sint, dicta quia
+            repellat, cumque eius porro impedit earum autem perspiciatis. Dicta ad unde modi iure nam molestias eius
+            velit..</div>
+        <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dicta ipsum cum.
+            Consequuntur impedit optio quaerat tempora in qui amet, distinctio ab, quam, omnis et illum! Dignissimos rem
+            magni accusamus?</div>
     </div>
 </div>
 <!-- shortcut .container-fluid>.row>.col*3>lorem1 -->
 <div class="container-fluid">
     <div class="row">
-        <div class="col">Lorem.</div>
-        <div class="col">Voluptatum.</div>
-        <div class="col">Beatae!</div>
+        <div class="col-md-2 py-3">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Cras justo odio
+                    <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Dapibus ac facilisis in
+                    <span class="badge bg-primary rounded-pill">2</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Morbi leo risus
+                    <span class="badge bg-primary rounded-pill">1</span>
+                </li>
+            </ul>
+        </div>
+        <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate exercitationem sint
+            molestias! Nemo minima laudantium animi alias, quibusdam cum optio molestiae dolorem error amet commodi
+            corporis distinctio odit, aperiam veniam tempora nam quis cumque officiis doloribus perspiciatis dolorum!
+            Unde eius facere repellendus hic ipsum in. Nihil nesciunt voluptatem ullam cum?</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 mx-auto shadow-lg p-4 ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, commodi? Cupiditate quam maxime iure
+            reiciendis quaerat ratione commodi quasi, hic voluptatem, optio eveniet non praesentium excepturi? Tenetur
+            consequuntur quam deserunt officiis adipisci non optio assumenda inventore esse quaerat, at velit
+            consequatur asperiores doloremque pariatur neque repudiandae nam odit magni est laboriosam distinctio fugit
+            obcaecati! Id exercitationem porro, accusantium asperiores laborum esse itaque cumque, nisi nemo, culpa
+            dolorem corrupti explicabo error? Maxime, unde dolores minima nisi sequi delectus labore officiis minus
+            perferendis recusandae ea enim eaque inventore iure, reiciendis ipsum similique nihil! Ipsam, eligendi
+            dignissimos totam ullam repellat iusto dicta pariatur!
+        </div>
     </div>
 </div>
 {% endblock content %}
